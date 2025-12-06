@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Lightbulb, TrendingUp, Crown, Shield } from 'lucide-react';
+import aboutMockup from '@/assets/about-mockup.jpg';
 
 const values = [
   {
@@ -44,30 +45,16 @@ export const AboutSection = () => {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-[4/3] rounded-lg bg-graphite border border-border overflow-hidden relative">
-              {/* Mockup Tech Visual */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-3/4 h-3/4 rounded-lg bg-background/50 border border-primary/20 p-6 relative">
-                  {/* Screen mockup */}
-                  <div className="w-full h-full rounded bg-secondary/50 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                        <span className="text-3xl font-heading font-bold text-gradient-gold">A</span>
-                      </div>
-                      <div className="h-2 w-32 bg-primary/20 rounded mx-auto mb-2" />
-                      <div className="h-2 w-24 bg-primary/10 rounded mx-auto" />
-                    </div>
-                  </div>
-                  {/* Decorative dots */}
-                  <div className="absolute top-2 left-2 flex gap-1">
-                    <div className="w-2 h-2 rounded-full bg-primary/50" />
-                    <div className="w-2 h-2 rounded-full bg-primary/30" />
-                    <div className="w-2 h-2 rounded-full bg-primary/20" />
-                  </div>
-                </div>
-              </div>
+            <div className="aspect-[4/3] rounded-lg overflow-hidden relative group">
+              <img 
+                src={aboutMockup} 
+                alt="Aureon Digital - Dashboard de Marketing Digital Premium" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
               {/* Gold accent line */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-gold" />
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-[linear-gradient(90deg,hsl(43,65%,52%)_0%,hsl(43,65%,38%)_100%)]" />
+              {/* Subtle overlay for depth */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
             </div>
           </motion.div>
 

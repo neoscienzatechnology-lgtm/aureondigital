@@ -4,6 +4,13 @@ import { useRef, useState } from 'react';
 import { X, TrendingUp, Users, DollarSign } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+import case1 from '@/assets/case-1.jpg';
+import case2 from '@/assets/case-2.jpg';
+import case3 from '@/assets/case-3.jpg';
+import case4 from '@/assets/case-4.jpg';
+import case5 from '@/assets/case-5.jpg';
+import case6 from '@/assets/case-6.jpg';
+
 interface Case {
   id: number;
   title: string;
@@ -22,7 +29,7 @@ const cases: Case[] = [
     id: 1,
     title: 'E-commerce Fashion',
     category: 'Tráfego Pago',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop',
+    image: case1,
     description: 'Estratégia completa de tráfego pago para e-commerce de moda, resultando em crescimento exponencial de vendas online.',
     results: [
       { label: 'Aumento em vendas', value: '+340%', icon: TrendingUp },
@@ -34,7 +41,7 @@ const cases: Case[] = [
     id: 2,
     title: 'Startup SaaS B2B',
     category: 'Branding',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: case2,
     description: 'Rebranding completo e posicionamento estratégico para startup de tecnologia no mercado B2B.',
     results: [
       { label: 'Brand awareness', value: '+280%', icon: TrendingUp },
@@ -46,7 +53,7 @@ const cases: Case[] = [
     id: 3,
     title: 'Clínica Premium',
     category: 'Marketing Digital',
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop',
+    image: case3,
     description: 'Estratégia digital integrada para clínica de estética, com foco em captação de pacientes de alto valor.',
     results: [
       { label: 'Agendamentos', value: '+520%', icon: TrendingUp },
@@ -58,7 +65,7 @@ const cases: Case[] = [
     id: 4,
     title: 'Imobiliária de Luxo',
     category: 'Desenvolvimento Web',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop',
+    image: case4,
     description: 'Site institucional premium com integração de catálogo de imóveis e sistema de agendamento.',
     results: [
       { label: 'Visitas mensais', value: '50.000+', icon: Users },
@@ -70,7 +77,7 @@ const cases: Case[] = [
     id: 5,
     title: 'Restaurante Gourmet',
     category: 'Redes Sociais',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop',
+    image: case5,
     description: 'Gestão de redes sociais e criação de conteúdo visual premium para restaurante de alta gastronomia.',
     results: [
       { label: 'Seguidores', value: '+15.000', icon: Users },
@@ -82,7 +89,7 @@ const cases: Case[] = [
     id: 6,
     title: 'Fintech Inovadora',
     category: 'Performance',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    image: case6,
     description: 'Campanhas de aquisição de usuários e otimização de funil para aplicativo financeiro.',
     results: [
       { label: 'Downloads', value: '100.000+', icon: Users },
