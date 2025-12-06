@@ -10,6 +10,12 @@ import case3 from '@/assets/case-3.jpg';
 import case4 from '@/assets/case-4.jpg';
 import case5 from '@/assets/case-5.jpg';
 import case6 from '@/assets/case-6.jpg';
+import case7 from '@/assets/case-7.jpg';
+import case8 from '@/assets/case-8.jpg';
+import case9 from '@/assets/case-9.jpg';
+import case10 from '@/assets/case-10.jpg';
+import case11 from '@/assets/case-11.jpg';
+import case12 from '@/assets/case-12.jpg';
 
 interface Case {
   id: number;
@@ -101,7 +107,7 @@ const cases: Case[] = [
     id: 7,
     title: 'Academia Premium',
     category: 'Marketing Digital',
-    image: case1,
+    image: case7,
     description: 'Estratégia omnichannel para rede de academias premium, integrando online e offline.',
     results: [
       { label: 'Novas matrículas', value: '+380%', icon: Users },
@@ -113,7 +119,7 @@ const cases: Case[] = [
     id: 8,
     title: 'Escritório de Advocacia',
     category: 'SEO & Conteúdo',
-    image: case2,
+    image: case8,
     description: 'Estratégia de SEO e marketing de conteúdo para escritório de advocacia empresarial.',
     results: [
       { label: 'Tráfego orgânico', value: '+650%', icon: TrendingUp },
@@ -125,7 +131,7 @@ const cases: Case[] = [
     id: 9,
     title: 'Loja de Móveis',
     category: 'E-commerce',
-    image: case3,
+    image: case9,
     description: 'Desenvolvimento e otimização de e-commerce para loja de móveis de alto padrão.',
     results: [
       { label: 'Conversão', value: '+180%', icon: TrendingUp },
@@ -137,7 +143,7 @@ const cases: Case[] = [
     id: 10,
     title: 'Construtora',
     category: 'Geração de Leads',
-    image: case4,
+    image: case10,
     description: 'Campanha de captação de leads para lançamento imobiliário de alto padrão.',
     results: [
       { label: 'Leads captados', value: '8.500+', icon: Users },
@@ -149,7 +155,7 @@ const cases: Case[] = [
     id: 11,
     title: 'Clínica Odontológica',
     category: 'Google Ads',
-    image: case5,
+    image: case11,
     description: 'Campanhas de Google Ads segmentadas para clínica odontológica especializada.',
     results: [
       { label: 'Agendamentos', value: '+420%', icon: Users },
@@ -161,7 +167,7 @@ const cases: Case[] = [
     id: 12,
     title: 'E-commerce de Cosméticos',
     category: 'Influencer Marketing',
-    image: case6,
+    image: case12,
     description: 'Estratégia de influencer marketing para marca de cosméticos naturais.',
     results: [
       { label: 'Alcance', value: '5M+', icon: Users },
