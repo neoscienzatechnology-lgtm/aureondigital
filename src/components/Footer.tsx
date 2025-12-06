@@ -1,5 +1,4 @@
 import { Linkedin, Instagram, Facebook } from 'lucide-react';
-import logo from '@/assets/logo.png';
 
 const socialLinks = [
   { icon: Linkedin, href: 'https://linkedin.com/company/aureondigital', label: 'LinkedIn' },
@@ -14,7 +13,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <a href="#inicio" className="flex items-center">
-            <img src={logo} alt="Aureon Digital" className="h-10 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/logo.png?v=2" alt="Aureon Digital" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
           </a>
           
           {/* Copyright */}
