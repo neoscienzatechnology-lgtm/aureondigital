@@ -63,9 +63,11 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button variant="gold" size="lg">
-              Solicitar Proposta
-            </Button>
+            <a href="#contato">
+              <Button variant="gold" size="lg">
+                Solicitar Proposta
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -99,9 +101,11 @@ export const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="gold" size="lg" className="mt-4">
-                Solicitar Proposta
-              </Button>
+              <a href="#contato" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button variant="gold" size="lg" className="mt-4 w-full">
+                  Solicitar Proposta
+                </Button>
+              </a>
             </div>
           </motion.div>
         )}

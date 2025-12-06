@@ -53,12 +53,16 @@ export const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button variant="gold" size="xl">
-              Conheça nossos serviços
-            </Button>
-            <Button variant="goldOutline" size="xl">
-              Solicitar Reunião
-            </Button>
+            <a href="#servicos">
+              <Button variant="gold" size="xl">
+                Conheça nossos serviços
+              </Button>
+            </a>
+            <a href="#contato">
+              <Button variant="goldOutline" size="xl">
+                Solicitar Reunião
+              </Button>
+            </a>
           </motion.div>
         </div>
       </div>
