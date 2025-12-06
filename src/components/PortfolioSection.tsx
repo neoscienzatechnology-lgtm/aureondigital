@@ -97,6 +97,78 @@ const cases: Case[] = [
       { label: 'LTV/CAC', value: '4.2x', icon: TrendingUp },
     ],
   },
+  {
+    id: 7,
+    title: 'Academia Premium',
+    category: 'Marketing Digital',
+    image: case1,
+    description: 'Estratégia omnichannel para rede de academias premium, integrando online e offline.',
+    results: [
+      { label: 'Novas matrículas', value: '+380%', icon: Users },
+      { label: 'Retenção', value: '+45%', icon: TrendingUp },
+      { label: 'Receita recorrente', value: '+290%', icon: DollarSign },
+    ],
+  },
+  {
+    id: 8,
+    title: 'Escritório de Advocacia',
+    category: 'SEO & Conteúdo',
+    image: case2,
+    description: 'Estratégia de SEO e marketing de conteúdo para escritório de advocacia empresarial.',
+    results: [
+      { label: 'Tráfego orgânico', value: '+650%', icon: TrendingUp },
+      { label: 'Leads qualificados', value: '+320%', icon: Users },
+      { label: 'Autoridade de domínio', value: '72', icon: DollarSign },
+    ],
+  },
+  {
+    id: 9,
+    title: 'Loja de Móveis',
+    category: 'E-commerce',
+    image: case3,
+    description: 'Desenvolvimento e otimização de e-commerce para loja de móveis de alto padrão.',
+    results: [
+      { label: 'Conversão', value: '+180%', icon: TrendingUp },
+      { label: 'Ticket médio', value: '+95%', icon: DollarSign },
+      { label: 'Faturamento', value: 'R$ 2M+', icon: Users },
+    ],
+  },
+  {
+    id: 10,
+    title: 'Construtora',
+    category: 'Geração de Leads',
+    image: case4,
+    description: 'Campanha de captação de leads para lançamento imobiliário de alto padrão.',
+    results: [
+      { label: 'Leads captados', value: '8.500+', icon: Users },
+      { label: 'Custo por lead', value: 'R$ 12', icon: DollarSign },
+      { label: 'Vendas fechadas', value: '45 unid.', icon: TrendingUp },
+    ],
+  },
+  {
+    id: 11,
+    title: 'Clínica Odontológica',
+    category: 'Google Ads',
+    image: case5,
+    description: 'Campanhas de Google Ads segmentadas para clínica odontológica especializada.',
+    results: [
+      { label: 'Agendamentos', value: '+420%', icon: Users },
+      { label: 'ROAS', value: '12x', icon: DollarSign },
+      { label: 'Custo por conversão', value: '-60%', icon: TrendingUp },
+    ],
+  },
+  {
+    id: 12,
+    title: 'E-commerce de Cosméticos',
+    category: 'Influencer Marketing',
+    image: case6,
+    description: 'Estratégia de influencer marketing para marca de cosméticos naturais.',
+    results: [
+      { label: 'Alcance', value: '5M+', icon: Users },
+      { label: 'Vendas via influencers', value: '+580%', icon: TrendingUp },
+      { label: 'ROI da campanha', value: '15x', icon: DollarSign },
+    ],
+  },
 ];
 
 export const PortfolioSection = () => {
