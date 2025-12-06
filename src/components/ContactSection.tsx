@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Send, MapPin, Phone, Mail } from 'lucide-react';
+import { Send, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 
@@ -67,7 +67,7 @@ export const ContactSection = () => {
                   <h4 className="font-heading font-semibold text-foreground">
                     Localização
                   </h4>
-                  <p className="text-muted-foreground">São Paulo, Brasil</p>
+                  <p className="text-muted-foreground">Ribeirão Preto, São Paulo</p>
                 </div>
               </div>
 
@@ -79,19 +79,7 @@ export const ContactSection = () => {
                   <h4 className="font-heading font-semibold text-foreground">
                     Telefone
                   </h4>
-                  <p className="text-muted-foreground">+55 (11) 99999-9999</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <Mail className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-heading font-semibold text-foreground">
-                    E-mail
-                  </h4>
-                  <p className="text-muted-foreground">contato@aureondigital.com.br</p>
+                  <p className="text-muted-foreground">+55 12 99184-6413</p>
                 </div>
               </div>
             </div>
