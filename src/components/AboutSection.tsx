@@ -48,7 +48,7 @@ export const AboutSection = () => {
             <div className="aspect-[4/3] rounded-lg overflow-hidden relative group">
               <img 
                 src={aboutMockup} 
-                alt="Nextneotech - Dashboard de Marketing Digital Premium" 
+                alt="Neotech Technology - Dashboard de Marketing Digital Premium" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               {/* Gold accent line */}
@@ -72,7 +72,7 @@ export const AboutSection = () => {
               <span className="text-gradient-gold">resultados digitais</span>
             </h2>
             <p className="text-muted-foreground font-body text-lg leading-relaxed mb-8">
-              A Nextneotech nasceu da paixão por inovação e da busca incessante por
+              A Neotech Technology nasceu da paixão por inovação e da busca incessante por
               excelência. Combinamos estratégia, criatividade e tecnologia para criar
               soluções digitais que não apenas impressionam, mas também convertem.
             </p>
