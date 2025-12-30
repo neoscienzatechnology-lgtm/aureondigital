@@ -38,7 +38,7 @@ export const Header = () => {
           <a href="#inicio" className="flex items-center gap-3 group">
             <img 
               src="/logo.png" 
-              alt="Aureon Digital" 
+              alt="Neotech Technology" 
               className="h-14 w-auto object-contain"
               onError={(e) => {
                 console.error('Logo failed to load');
