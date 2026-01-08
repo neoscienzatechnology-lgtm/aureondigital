@@ -1,10 +1,9 @@
 import { Linkedin, Instagram, Facebook } from 'lucide-react';
-import logo from '@/assets/logo.png';
 
 const socialLinks = [
-  { icon: Linkedin, href: 'https://linkedin.com/company/neotechtech', label: 'LinkedIn' },
-  { icon: Instagram, href: 'https://instagram.com/neotechtech', label: 'Instagram' },
-  { icon: Facebook, href: 'https://facebook.com/neotechtech', label: 'Facebook' },
+  { icon: Linkedin, href: 'https://linkedin.com/company/aureondigital', label: 'LinkedIn' },
+  { icon: Instagram, href: 'https://instagram.com/aureondigital', label: 'Instagram' },
+  { icon: Facebook, href: 'https://facebook.com/aureondigital', label: 'Facebook' },
 ];
 
 export const Footer = () => {
@@ -14,12 +13,12 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <a href="#inicio" className="flex items-center">
-            <img src={logo} alt="Neotech Technology" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/logo.png?v=2" alt="Aureon Digital" className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity" />
           </a>
           
           {/* Copyright */}
           <p className="text-muted-foreground font-body text-sm text-center md:text-left">
-            © 2025 Neotech Technology. Todos os direitos reservados.
+            © 2025 Aureon Digital. Todos os direitos reservados.
           </p>
 
           {/* Social Links */}

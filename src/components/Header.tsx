@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logo from '@/assets/logo.png';
 
 const navLinks = [
   { href: '#inicio', label: 'Início' },
@@ -38,9 +37,13 @@ export const Header = () => {
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-3 group">
             <img 
-              src={logo} 
-              alt="Neotech Technology" 
+              src="/logo.png" 
+              alt="Aureon Digital" 
               className="h-14 w-auto object-contain"
+              onError={(e) => {
+                console.error('Logo failed to load');
+                e.currentTarget.style.display = 'none';
+              }}
             />
           </a>
 
