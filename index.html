@@ -1105,6 +1105,16 @@
     .diag-cta svg { width: 22px; height: 22px; fill: #042b13; }
     .diag-note { margin-top: 16px; font-size: 12.5px; color: var(--dim); }
 
+    /* ══ IMAGENS REAIS DOS CASES ══ */
+    .port-preview .case-img {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; z-index: 1; display: block;
+      transition: transform .5s cubic-bezier(.22,1,.36,1);
+    }
+    .port-card:hover .port-preview .case-img { transform: scale(1.05); }
+    .port-preview .result-badge { z-index: 3; }
+    .port-preview .port-hover { z-index: 3; }
+
     @media (max-width: 900px) {
       .deliver-grid { grid-template-columns: repeat(2, 1fr); }
       .diag-box { padding: 48px 24px; }
@@ -1446,6 +1456,7 @@
       <!-- Card 1: SaaS Dashboard (web) -->
       <div class="port-card reveal" data-cat="web">
         <div class="port-preview" style="background:linear-gradient(160deg,#040e24,#072040)">
+          <img class="case-img" src="/assets/cases/aureon-01-saas.webp" alt="Plataforma SaaS B2B — dashboard de gestão empresarial" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>+89%</strong><span>Produtividade</span></div>
           <div class="mock-browser">
             <div class="mock-topbar">
@@ -1485,6 +1496,7 @@
       <!-- Card 2: App Mobile Delivery -->
       <div class="port-card reveal" data-cat="mobile">
         <div class="port-preview" style="background:linear-gradient(160deg,#040e24,#063060);display:flex;gap:16px;align-items:center;justify-content:center">
+          <img class="case-img" src="/assets/cases/aureon-02-delivery.webp" alt="Aplicativo de delivery em smartphone" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>4.9★</strong><span>App Store</span></div>
           <div class="mock-phone">
             <div class="mock-phone-notch"><div class="mock-phone-notch-pill"></div></div>
@@ -1531,6 +1543,7 @@
       <!-- Card 3: Marketing Campaign -->
       <div class="port-card reveal" data-cat="marketing">
         <div class="port-preview" style="background:linear-gradient(160deg,#030f20,#04265a)">
+          <img class="case-img" src="/assets/cases/aureon-03-marketing.webp" alt="Campanha de marketing digital — painel de resultados" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>+340%</strong><span>Leads qualificados</span></div>
           <div class="mock-mkt" style="padding:14px">
             <div class="mock-graph-title">Performance de Campanhas — 60 dias</div>
@@ -1580,6 +1593,7 @@
       <!-- Card 4: ERP (web) -->
       <div class="port-card reveal" data-cat="web">
         <div class="port-preview" style="background:linear-gradient(160deg,#040e24,#062550)">
+          <img class="case-img" src="/assets/cases/aureon-04-erp.webp" alt="Sistema ERP empresarial personalizado" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>−60%</strong><span>Tempo operacional</span></div>
           <div class="mock-code">
             <div class="mock-code-top">
@@ -1630,6 +1644,7 @@
       <!-- Card 5: Portal (web) -->
       <div class="port-card reveal" data-cat="web">
         <div class="port-preview" style="background:linear-gradient(160deg,#030c1e,#052048)">
+          <img class="case-img" src="/assets/cases/aureon-05-portal.webp" alt="Portal corporativo institucional" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>98</strong><span>PageSpeed Score</span></div>
           <div class="mock-browser" style="width:92%">
             <div class="mock-topbar">
@@ -1677,6 +1692,7 @@
       <!-- Card 6: SEO -->
       <div class="port-card reveal" data-cat="marketing">
         <div class="port-preview" style="background:linear-gradient(160deg,#030c1e,#04204a)">
+          <img class="case-img" src="/assets/cases/aureon-06-seo.webp" alt="Painel de SEO e crescimento orgânico" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>3×</strong><span>Tráfego orgânico</span></div>
           <div class="mock-mkt">
             <div class="mock-graph-title">Tráfego Orgânico — 4 meses</div>
@@ -1721,6 +1737,7 @@
       <!-- Card 7: E-commerce (ecommerce) -->
       <div class="port-card reveal" data-cat="ecommerce">
         <div class="port-preview" style="background:linear-gradient(160deg,#040e24,#071e44)">
+          <img class="case-img" src="/assets/cases/aureon-07-loja.webp" alt="Loja virtual com checkout otimizado" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>+218%</strong><span>Receita online</span></div>
           <div class="mock-browser" style="width:92%">
             <div class="mock-topbar">
@@ -1782,6 +1799,7 @@
       <!-- Card 8: Landing Page alta conversão (web) -->
       <div class="port-card reveal" data-cat="web">
         <div class="port-preview" style="background:linear-gradient(160deg,#030c1e,#062042)">
+          <img class="case-img" src="/assets/cases/aureon-08-landing.webp" alt="Landing page de alta conversão" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>11.7%</strong><span>Taxa de conversão</span></div>
           <div class="mock-browser" style="width:92%">
             <div class="mock-topbar">
@@ -1827,6 +1845,7 @@
       <!-- Card 9: App Fitness (mobile) -->
       <div class="port-card reveal" data-cat="mobile">
         <div class="port-preview" style="background:linear-gradient(160deg,#040e24,#071a3e);display:flex;gap:14px;align-items:center;justify-content:center">
+          <img class="case-img" src="/assets/cases/aureon-09-fitness.webp" alt="Aplicativo de saúde e fitness" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>120k+</strong><span>Usuários ativos</span></div>
           <div class="mock-phone" style="width:90px">
             <div class="mock-phone-notch"><div class="mock-phone-notch-pill"></div></div>
@@ -1874,6 +1893,7 @@
       <!-- Card 10: Automação / Chatbot (automacao) -->
       <div class="port-card reveal" data-cat="automacao">
         <div class="port-preview" style="background:linear-gradient(160deg,#030d20,#062550)">
+          <img class="case-img" src="/assets/cases/aureon-10-chatbot.webp" alt="Chatbot de atendimento com IA" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>−78%</strong><span>Tickets de suporte</span></div>
           <div style="width:86%;display:flex;flex-direction:column;gap:7px">
             <!-- Chat mockup -->
@@ -1923,6 +1943,7 @@
       <!-- Card 11: Social Media (marketing) -->
       <div class="port-card reveal" data-cat="marketing">
         <div class="port-preview" style="background:linear-gradient(160deg,#030d20,#04224a)">
+          <img class="case-img" src="/assets/cases/aureon-11-social.webp" alt="Gestão de redes sociais" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>+890%</strong><span>Alcance orgânico</span></div>
           <div style="width:88%;display:flex;flex-direction:column;gap:7px">
             <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.5px">Social Media — 90 dias</div>
@@ -1968,6 +1989,7 @@
       <!-- Card 12: Automação Workflow (automacao) -->
       <div class="port-card reveal" data-cat="automacao">
         <div class="port-preview" style="background:linear-gradient(160deg,#030c1e,#051c40)">
+          <img class="case-img" src="/assets/cases/aureon-12-crm.webp" alt="Pipeline de vendas automatizado em CRM" loading="lazy" width="900" height="563" />
           <div class="result-badge"><strong>40h/sem</strong><span>Economizadas</span></div>
           <div style="width:88%;display:flex;flex-direction:column;gap:6px">
             <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.5px">Pipeline de Automação</div>
