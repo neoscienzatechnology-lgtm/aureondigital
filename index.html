@@ -2681,6 +2681,18 @@
     const m = document.getElementById('privacy-modal');
     if (m) { m.classList.remove('show'); document.body.style.overflow = ''; }
   }
+
+  /* ══ Rastreamento de cliques no WhatsApp (GA4 + Meta Pixel) ══ */
+  document.addEventListener('click', function (e) {
+    var link = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]') : null;
+    if (!link) return;
+    var origem = link.id === 'wa-btn' ? 'botao_flutuante'
+      : (link.closest('#diagnostico') ? 'diagnostico'
+      : (link.closest('#contato') ? 'contato'
+      : (link.closest('#nav') ? 'menu' : 'outro')));
+    try { if (window.gtag) window.gtag('event', 'whatsapp_click', { event_category: 'lead', event_label: origem, transport_type: 'beacon' }); } catch (err) {}
+    try { if (window.fbq) window.fbq('track', 'Contact', { content_name: 'whatsapp_' + origem }); } catch (err) {}
+  }, true);
 </script>
 
 <!-- ══ COOKIE BANNER (LGPD) ══ -->
